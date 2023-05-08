@@ -1,0 +1,36 @@
+#============================================================================================================
+#                                   PLUGIN TRASH / POUBELLE DE GHOSTSUSHI | CONFIG
+#============================================================================================================
+                               ## -------- [ COMMAND ] ------------
+# -> Legende  :
+#   - trash_cmd = le premier est la commande et la seconde est la description (Example: trash:Open Trash)
+#   - trash_aliases = les aliase de la  command (si vous voulez que le command a plusieurs noms ! Exemple: je veux que le command trash ait aussi comme command poubelle bah dans les [] tu mets "poubelle") !!
+trash_cmd: "trash:Ouvrir la Poubelle"
+trash_aliases: ["poubelle", "clearinv"]
+
+                               ## -------- [ STATUS ] ------------
+# -> Legende  :
+#   - simple-chest = Un coffre simple
+#   - double-chest = Un coffre double
+#   - hopper = Un hopper / entonnoir
+simple-chest: false
+double-chest: true
+hopper: false
+
+                              ## -------- [ ITEM ] ------------
+# -> Legende :
+#   - item-status = si vous voulez implementer la poubelle comme objet (true = oui & false = non) si
+#   si vous mettez false toucher pas au reste de la cetgorie [ ITEM ]
+#   - item-id = l'id de la poubelle
+#   - item-meta = la meta de la poubelle
+item-status: true
+item-id: 2
+item-meta: 0
+
+                              ## -------- [ AUTRES ] ------------
+# -> Legende :
+#   - titre-coffre = Le titre du coffre quand on execute/use la command/l'item !
+#   - message-close = Le message quand vous avez mis false tout les status
+titre-coffre: ">> §dPoubelle"
+
+message-close: "- La poubelle est en maintenence "
